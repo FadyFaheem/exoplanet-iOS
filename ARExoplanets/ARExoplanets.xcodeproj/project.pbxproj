@@ -60,10 +60,10 @@
 				31DDEE6927C6B31600E07B73 /* AppDelegate.swift */,
 				31DDEE6B27C6B31600E07B73 /* art.scnassets */,
 				31DDEE6D27C6B31600E07B73 /* ARViewController.swift */,
+				31DDEE7C27C6B43400E07B73 /* StartViewController.swift */,
 				31DDEE6F27C6B31600E07B73 /* Main.storyboard */,
 				31DDEE7227C6B31800E07B73 /* Assets.xcassets */,
 				31DDEE7427C6B31800E07B73 /* LaunchScreen.storyboard */,
-				31DDEE7C27C6B43400E07B73 /* StartViewController.swift */,
 			);
 			path = ARExoplanets;
 			sourceTree = "<group>";

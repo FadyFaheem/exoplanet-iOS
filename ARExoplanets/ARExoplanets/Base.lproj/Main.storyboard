@@ -8,33 +8,50 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Exoplanets-->
         <scene sceneID="Gic-op-04g">
             <objects>
-                <viewController id="FuA-CF-cJm" sceneMemberID="viewController">
+                <viewController id="FuA-CF-cJm" customClass="StartViewController" customModule="ARExoplanets" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W1t-4f-19G">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvA-xG-qvf">
-                                <rect key="frame" x="156.5" y="418.5" width="101" height="59"/>
+                                <rect key="frame" x="68" y="288" width="278" height="59"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Start">
+                                <buttonConfiguration key="configuration" style="plain" title="Show Exoplanet">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="37"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="BV1-FR-VrT" kind="show" id="aKB-VP-s5i"/>
+                                    <action selector="showExoplanetPressed:" destination="FuA-CF-cJm" eventType="touchUpInside" id="f5f-SU-ucX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BvJ-Og-Bf7">
+                                <rect key="frame" x="79.5" y="419" width="255" height="59"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show Diorama">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="37"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="funcShowDioramaPressed:" destination="FuA-CF-cJm" eventType="touchUpInside" id="Bfa-0Q-Sdj"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5Qm-o9-qjT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="BvJ-Og-Bf7" firstAttribute="centerX" secondItem="W1t-4f-19G" secondAttribute="centerX" id="DbT-8b-GTd"/>
                             <constraint firstItem="cvA-xG-qvf" firstAttribute="centerX" secondItem="W1t-4f-19G" secondAttribute="centerX" id="Kn9-4h-8g6"/>
-                            <constraint firstItem="cvA-xG-qvf" firstAttribute="centerY" secondItem="W1t-4f-19G" secondAttribute="centerY" id="wGF-Pq-ZZu"/>
+                            <constraint firstItem="BvJ-Og-Bf7" firstAttribute="top" secondItem="cvA-xG-qvf" secondAttribute="bottom" constant="72" id="Qr2-aE-JTj"/>
+                            <constraint firstItem="cvA-xG-qvf" firstAttribute="top" secondItem="5Qm-o9-qjT" secondAttribute="top" constant="200" id="s6r-6Q-G5c"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="vEY-Cg-cR6"/>
+                    <navigationItem key="navigationItem" title="Exoplanets" id="vEY-Cg-cR6"/>
+                    <connections>
+                        <segue destination="BV1-FR-VrT" kind="show" identifier="preesentARView" id="qKX-z3-jhd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3v0-13-O9e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -91,6 +108,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
