@@ -7,9 +7,10 @@
 
 import UIKit
 
+
 class StartViewController: UIViewController {
 
-    var delegate: dataIntake?
+    var scnName : String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,10 +19,19 @@ class StartViewController: UIViewController {
     }
     
     @IBAction func showExoplanetPressed(_ sender: UIButton) {
+        scnName = "art.scnassets/Circle.scn"
         performSegue(withIdentifier: "preesentARView", sender: self)
     }
     
     @IBAction func funcShowDioramaPressed(_ sender: UIButton) {
+        scnName = "art.scnassets/Circle.scn"
+        performSegue(withIdentifier: "preesentARView", sender: self)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "preesentARView"){
+            let destanationVC = segue.destination as! ARViewController
+            destanationVC.nameOfScn = scnName
+        }
+    }
 }

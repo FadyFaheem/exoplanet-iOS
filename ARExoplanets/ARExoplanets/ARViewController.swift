@@ -11,29 +11,18 @@ import ARKit
 
 
 
-class ARViewController: UIViewController, ARSCNViewDelegate, dataIntake {
+class ARViewController: UIViewController, ARSCNViewDelegate {
+    
     
     @IBOutlet var sceneView: ARSCNView!
     
-    var nameOfScn = "art.scnassets/Circle.scn"
+    var nameOfScn = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         // Set the view's delegate
         sceneView.delegate = self
-
-//        let sphere = SCNSphere(radius: 0.1)
-//        let material = SCNMaterial()
-//        material.diffuse.contents = UIColor.red
-//        sphere.materials = [material]
-//        let node = SCNNode()
-//        node.position = SCNVector3(0, 0.1, -0.5)
-//        node.geometry = sphere
-//        sceneView.scene.rootNode.addChildNode(node)
-//        sceneView.autoenablesDefaultLighting = true
-        
         
         let scene = SCNScene(named: nameOfScn)!
 
