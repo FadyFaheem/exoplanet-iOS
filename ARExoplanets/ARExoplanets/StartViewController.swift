@@ -24,7 +24,7 @@ class StartViewController: UIViewController {
     }
     
     @IBAction func funcShowDioramaPressed(_ sender: UIButton) {
-        scnName = "art.scnassets/Circle.scn"
+        scnName = "art.scnassets/Diorama.scn"
         performSegue(withIdentifier: "preesentARView", sender: self)
     }
     

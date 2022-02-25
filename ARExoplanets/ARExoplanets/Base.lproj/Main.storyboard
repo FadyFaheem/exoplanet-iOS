@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvA-xG-qvf">
-                                <rect key="frame" x="68" y="288" width="278" height="59"/>
+                                <rect key="frame" x="68" y="358" width="278" height="59"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Show Exoplanet">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="37"/>
@@ -28,7 +28,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BvJ-Og-Bf7">
-                                <rect key="frame" x="79.5" y="419" width="255" height="59"/>
+                                <rect key="frame" x="79.5" y="489" width="255" height="59"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Show Diorama">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="37"/>
@@ -45,7 +45,7 @@
                             <constraint firstItem="BvJ-Og-Bf7" firstAttribute="centerX" secondItem="W1t-4f-19G" secondAttribute="centerX" id="DbT-8b-GTd"/>
                             <constraint firstItem="cvA-xG-qvf" firstAttribute="centerX" secondItem="W1t-4f-19G" secondAttribute="centerX" id="Kn9-4h-8g6"/>
                             <constraint firstItem="BvJ-Og-Bf7" firstAttribute="top" secondItem="cvA-xG-qvf" secondAttribute="bottom" constant="72" id="Qr2-aE-JTj"/>
-                            <constraint firstItem="cvA-xG-qvf" firstAttribute="top" secondItem="5Qm-o9-qjT" secondAttribute="top" constant="200" id="s6r-6Q-G5c"/>
+                            <constraint firstItem="cvA-xG-qvf" firstAttribute="top" secondItem="5Qm-o9-qjT" secondAttribute="top" constant="270" id="s6r-6Q-G5c"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Exoplanets" id="vEY-Cg-cR6"/>
